@@ -36,7 +36,7 @@ O projeto <b>Pokedex With PokeAPI</b> é um app para simular uma pokedex.
 
 ### :link: Link
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://nicolaslk.github.io/Pokedex-With-PokeAPI)
 
 ## Layout:
 
