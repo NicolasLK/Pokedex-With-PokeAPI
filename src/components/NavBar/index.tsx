@@ -11,3 +11,13 @@ export function NavBar() {
     </N.Container>
   );
 }
+
+{
+  /* <X.ImgHeader src={halfPokeBall} />
+      <X.Apresentation>
+        <X.Title>Pokedex</X.Title>
+        <X.Description>
+          Search for Pokémon by name or using the National Pokédex number.
+        </X.Description>
+      </X.Apresentation> */
+}

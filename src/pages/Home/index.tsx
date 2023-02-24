@@ -121,3 +121,24 @@ export function Home() {
     </H.Container>
   );
 }
+
+{
+  /* <H.PokeList>
+<H.SearchContainer>
+  <MagnifyingGlass weight="bold" />
+  <input
+    type="text"
+    placeholder="What Pokémon are you looking for?"
+    onChange={(e) => filterPokemonName(e.target.value)}
+  />
+</H.SearchContainer>
+{pokemons.map((pokemon) => {
+  return (
+    <Link key={pokemon.id} to={`/home/pokemon/${pokemon.id}`}>
+      <Card data={pokemon} />
+    </Link>
+  );
+})}
+<Button text="More Pokemons" OnClick={getNamePokemon} />
+</H.PokeList> */
+}

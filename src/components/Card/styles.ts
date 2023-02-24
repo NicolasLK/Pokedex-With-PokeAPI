@@ -121,3 +121,104 @@ export const TypesText = styled.span`
     line-height: 1.125rem;
   `}
 `;
+
+//===============================================
+// Left Side
+
+// export const LeftSide = styled.div
+
+//   position: relative;
+
+//   display: flex;
+//   flex-direction: column;
+
+//   width: 50%;
+// `;
+
+// export const PokeId = styled.span`
+//   ${({ theme }) => css`
+//     font-weight: bold;
+//     font-size: ${theme.textSizes["pokeNumber-size"]};
+//     line-height: 0.875rem;
+
+//     color: ${theme.colors.textColor.black};
+
+//     text-align: left;
+
+//     max-width: 1.75rem;
+
+//     opacity: 0.6;
+//   `}
+// `;
+
+// export const PokeName = styled.span`
+//   ${({ theme }) => css`
+//     font-weight: bold;
+//     font-size: ${theme.textSizes["pokeName-size"]};
+//     line-height: 2rem;
+
+//     color: ${theme.colors.textColor.white};
+
+//     margin-bottom: 0.375rem;
+
+//     text-transform: capitalize;
+//   `}
+// `;
+
+// export const ContentType = styled.div`
+//   display: flex;
+//   gap: 0.375rem;
+// `;
+
+// export const PokeType = styled.div<PokemonTypeProps>`
+//   ${({ theme, pokeType }) => css`
+//     background-color: ${theme.colors.boxType[pokeType]};
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     width: 4rem;
+//     height: 1.5rem;
+
+//     padding: 0.25rem;
+
+//     border-radius: 3px;
+//   `}
+// `;
+
+// export const PokeTypeText = styled.span`
+//   ${({ theme }) => css`
+//     font-weight: 400;
+//     font-size: ${theme.textSizes["pokeType-size"]};
+//     line-height: 0.875rem;
+
+//     color: ${theme.colors.textColor.white};
+
+//     text-transform: capitalize;
+//   `}
+// `;
+
+//===============================================
+// Right Side
+
+// export const RightSide = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   position: relative;
+//   width: 50%;
+// `;
+
+// export const ImgPokemonCard = styled.img`
+//   margin-top: -2.5rem;
+//   width: 8.125rem;
+//   height: 8.125rem;
+// `;
+
+// export const PokeBallDetail = styled.img`
+//   position: absolute;
+
+//   right: -1.25rem;
+// `;

@@ -25,6 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Esse projeto utiliza as bibliotecas:
 
 - Axios
+- Lottie-react
 - Phosphor-react
 - React-router-dom
 - Styled-components
