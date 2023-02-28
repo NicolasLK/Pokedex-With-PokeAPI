@@ -1,9 +1,25 @@
 import styled, { css } from "styled-components";
 
-import { TypeName } from ".";
-
 interface TypeProps {
-  type: TypeName;
+  type:
+    | "bug"
+    | "dark"
+    | "dragon"
+    | "electric"
+    | "fairy"
+    | "fighting"
+    | "fire"
+    | "flying"
+    | "ghost"
+    | "grass"
+    | "ground"
+    | "ice"
+    | "normal"
+    | "poison"
+    | "psychic"
+    | "rock"
+    | "steel"
+    | "water";
 }
 
 export const Container = styled.main<TypeProps>`

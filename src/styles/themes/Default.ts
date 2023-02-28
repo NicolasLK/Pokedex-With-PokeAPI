@@ -1,3 +1,24 @@
+export interface PokemonColorCard {
+  bug: string;
+  dark: string;
+  dragon: string;
+  electric: string;
+  fairy: string;
+  fighting: string;
+  fire: string;
+  flying: string;
+  ghost: string;
+  grass: string;
+  ground: string;
+  ice: string;
+  normal: string;
+  poison: string;
+  psychic: string;
+  rock: string;
+  steel: string;
+  water: string;
+}
+
 export const defaultTheme = {
   colors: {
     backgroundWhite: "#ffffff",
@@ -8,11 +29,6 @@ export const defaultTheme = {
     blue: "#0e6f9f",
     gray: "#747476",
 
-    textColors: {
-      white: "#ffffff",
-      black: "#17171B",
-      gray: "#747476",
-    },
     backgroundCard: {
       bug: "#8BD674",
       dark: "#6F6E78",
@@ -52,6 +68,11 @@ export const defaultTheme = {
       rock: "#BAAB82",
       steel: "#417D9A",
       water: "#4A90DA",
+    },
+    textColors: {
+      white: "#ffffff",
+      black: "#17171B",
+      gray: "#747476",
     },
   },
   textSizes: {

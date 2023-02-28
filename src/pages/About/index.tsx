@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { useTheme } from "styled-components";
+import { PokemonColorCard } from "../../styles/themes/Default";
 
 import { Api } from "../../services";
 
@@ -24,29 +25,27 @@ interface Stats {
   };
 }
 
-export type TypeName =
-  | "bug"
-  | "dark"
-  | "dragon"
-  | "electric"
-  | "fairy"
-  | "fighting"
-  | "fire"
-  | "flying"
-  | "ghost"
-  | "grass"
-  | "ground"
-  | "ice"
-  | "normal"
-  | "poison"
-  | "psychic"
-  | "rock"
-  | "steel"
-  | "water";
-
 interface PokemonType {
   type: {
-    name: TypeName;
+    name:
+      | "bug"
+      | "dark"
+      | "dragon"
+      | "electric"
+      | "fairy"
+      | "fighting"
+      | "fire"
+      | "flying"
+      | "ghost"
+      | "grass"
+      | "ground"
+      | "ice"
+      | "normal"
+      | "poison"
+      | "psychic"
+      | "rock"
+      | "steel"
+      | "water";
   };
 }
 
@@ -85,8 +84,10 @@ export function About() {
           height,
         } = response.data;
 
-        const currentType = types[0].type.name as TypeName;
-        const color = colors.backgroundCard[currentType];
+        const currentType = types[0].type.name;
+
+        const color =
+          colors.backgroundCard[currentType as keyof PokemonColorCard];
 
         setPokemon({
           id,
