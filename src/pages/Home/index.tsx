@@ -17,6 +17,22 @@ interface Request {
   types: PokemonType[];
 }
 
+export const verifyLastPageReached = (page: number, totalPages: number) => {
+  if (page + 1 < totalPages) {
+    return page + 1;
+  } else {
+    return page;
+  }
+};
+
+export const backToTheLastPage = (page: number) => {
+  if (page > 0) {
+    return page - 1;
+  } else {
+    return page;
+  }
+};
+
 export function Home() {
   const [page, setPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
@@ -77,15 +93,11 @@ export function Home() {
 
   // Botoes de navegacao
   const onLeftClickHandler = () => {
-    if (page > 0) {
-      setPage(page - 1);
-    }
+    setPage(backToTheLastPage);
   };
 
   const onRightClickHandler = () => {
-    if (page + 1 !== totalPages) {
-      setPage(page + 1);
-    }
+    setPage(verifyLastPageReached(page, totalPages));
   };
 
   //============================================
